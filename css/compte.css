@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #cccccc;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #9aa09a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.top-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.top-header p{
+    color: rgb(255, 248, 248);
+    font-size: 18px;
+    text-align: center;
+}
+.nav{
+    background-color: #474947;
+    padding: 10px 0;
+    display: flex;
+}
+
+.logo img{
+    width: 120px;
+    margin-left: 10%;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.nav-links a:hover{
+    background-color: #ff7200;
+    color: white;
+}
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+.compte-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.compte-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff7200;
+}
+.compte-container i{
+    font-size: 100px;
+    color: #ff7200;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #333333;
+    padding: 40px;
+    border-radius: 50%;
+    width: fit-content;
+    margin: 0 auto;
+}
+.compte-container p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.account-details{
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.356);
+}
+.account-details h2{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ff7200;
+}
+.account-details p{
+    text-align: left;
+    margin: 8px 0;
+}
+.groupe{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.groupes h2{
+    flex: 1;
+    text-align: center;
+    color: #ff7200;
+    margin-top: 10px;
+}
+.groupes ul{
+    flex: 2;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.groupes ul li{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.solde{
+    background-color: #f4f4f4;
+    padding: 70px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.356);
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+}
+.solde h2{
+    color: #ff7200;
+    margin-bottom: 20px;
+}
+.solde p{
+    margin: 8px 0;
+    font-size: 18px;
+}
+.add-funds{
+    background-color: #ff7200;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.add-funds:hover{
+    background-color: #474947;
+    color: #ff7200;
+}
+footer {
+    background-color: #585858;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ===== NAVIGATION FIXE COMME INSTAGRAM ===== */
+.navigateur {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(78, 73, 73, 0.623);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid #e0e0e0;
+    z-index: 1000;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navigateur-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.navigateur-icon ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.navigateur-icon li {
+    list-style: none;
+}
+
+.navigateur-icon li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 20px;
+    min-width: 60px;
+}
+
+.navigateur-icon li a i {
+    font-size: 30px;
+    margin-bottom: 4px;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.navigateur-icon li a span {
+    font-size: 10px;
+    font-weight: 500;
+    color: #666;
+}
+
+.navigateur-icon li a.active,
+.navigateur-icon li a:hover {
+    color: #ff7200;
+    background: rgb(0, 0, 0);
+}
+
+.navigateur-icon li a.active i,
+.navigateur-icon li a:hover i {
+    color: #ff7200;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+/* Tablettes */
+
+@media (max-width: 1024px){
+    .compte-container {
+        width: 90%;
+        padding: 15px;
+    }
+    .top-header{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links{
+        flex-direction: column;
+        display: none;
+    }
+    .logo img{
+        margin: 0;
+    }
+    .nav-links a{
+        margin: 10px 0;
+    }
+    .compte-container {
+        width: 95%;
+        padding: 10px;
+    }
+    .account-details, .solde{
+        padding: 10px;
+    }
+        /* Afficher la navigation fixe */
+        .navigateur {
+            display: block;
+        }
+        footer{
+            font-size: 14px;
+            padding: 7px 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+        /* Petits mobiles */
+        @media (max-width: 480px){
+            .compte-container h1 {
+                font-size: 24px;
+            }
+            .compte-container i{
+                font-size: 80px;
+                padding: 30px;
+            }
+            .account-details h2, .groupes h2, .solde h2 {
+                font-size: 18px;
+            }
+            .add-funds{
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            .navigateur-icon li a {
+                padding: 6px 8px;
+                min-width: 50px;
+            }
+            
+            .navigateur-icon li a i {
+                font-size: 18px;
+            }
+            
+            .navigateur-icon li a span {
+                font-size: 9px;
+            }
+            footer{
+                font-size: 12px;
+                display: flex;
+            }
+
+        }
+
+   
+
+
+
+
