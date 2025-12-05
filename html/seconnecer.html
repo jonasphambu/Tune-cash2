@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>se connecté</title>
+    <link rel="stylesheet" href="../css/seconnecté.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="seconnecté">
+        <h2>Se connecter</h2>
+        <form action="../php/seconnecter.php" method="post">
+            <div class="inputBox">
+                <span class="icon"><i class="fa fa-user"></i></span>
+                <input type="text" name="username" required>
+                <label>Nom d'utilisateur</label>
+            </div>
+            <div class="inputBox">
+                <span class="icon"><i class="fa fa-lock"></i></span>
+                <input type="password" name="password" required>
+                <label>Mot de passe</label>
+            </div>
+            <div class="links">
+                <a href="#">Mot de passe oublié?</a>
+                <a href="inscrire.html">S'inscrire</a>
+            </div>
+            <input type="submit" value="Se connecter">
+        </form>
+        <div class="lien-icone">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</body>
+</html>

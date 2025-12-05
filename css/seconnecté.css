@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #ff7200;
+}
+.seconnecté{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.788);
+}
+.seconnecté h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff7200;
+}
+.seconnecté .inputBox{
+    position: relative;
+    margin-bottom: 20px;
+}
+.seconnecté .inputBox input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ff7200;
+    border-radius: 5px;
+}
+.seconnecté .inputBox label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #666;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+.seconnecté .inputBox input:focus ~ label,
+.seconnecté .inputBox input:valid ~ label{
+    top: -10px;
+    left: 5px;
+    color: #2d64b6;
+    font-size: 12px;
+    background: #fff;
+    padding: 0 5px;
+}
+.seconnecté input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #666;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 5px;
+}
+.links{
+    margin-bottom: 15px;
+}
+.lien-icone{
+    text-align: center;
+    margin-top: 15px;
+}
+.lien-icone a i{
+    color: #666;
+}
+.lien-icone a i:hover{
+    color: #ff7200;
+}
+
+
+/* ===== NAVIGATION FIXE COMME INSTAGRAM ===== */
+.navigateur {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(78, 73, 73, 0.966);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid #e0e0e0;
+    z-index: 1000;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navigateur-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.navigateur-icon ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.navigateur-icon li {
+    list-style: none;
+}
+
+.navigateur-icon li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 20px;
+    min-width: 60px;
+}
+
+.navigateur-icon li a i {
+    font-size: 30px;
+    margin-bottom: 4px;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.navigateur-icon li a span {
+    font-size: 10px;
+    font-weight: 500;
+    color: #666;
+}
+
+.navigateur-icon li a.active,
+.navigateur-icon li a:hover {
+    color: #ff7200;
+    background: rgb(0, 0, 0);
+}
+
+.navigateur-icon li a.active i,
+.navigateur-icon li a:hover i {
+    color: #ff7200;
+    transform: translateY(-2px);
+}
+
+/* Tablettes */
+
+@media (max-width: 1024px) {
+    .compte-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .seconnecté{
+        width: 500px;
+    }
+
+    .top-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .seconnecté{
+        width: 350px;
+    }
+
+    /* Afficher la navigation fixe */
+    .navigateur {
+        display: block;
+    }
+
+    
+}
+
+/* Petits mobiles */
+@media (max-width: 480px) {
+    .seconnecté{
+        width: 300px;
+    }
+
+    .navigateur-icon li a {
+        padding: 6px 8px;
+        min-width: 50px;
+    }
+
+    .navigateur-icon li a i {
+        font-size: 18px;
+    }
+
+    .navigateur-icon li a span {
+        font-size: 9px;
+    }
+
+   
+
+}
