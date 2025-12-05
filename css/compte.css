@@ -288,6 +288,10 @@ footer {
         width: 95%;
         padding: 10px;
     }
+    .compte-container a i {
+        width: 100px;
+        font-size: 40px;
+    }
     .account-details, .solde{
         padding: 10px;
     }
